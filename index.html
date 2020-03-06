@@ -4,20 +4,20 @@
     <meta charset="utf-8" />
     <title>Numbery & Nany !</title>
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="./data/entries.js"></script>
     <script src="./log.js"></script>
     <script src="./init.js"></script>
 
-    <script src="./handlers/removeinput.js"></script>
-    <script src="./handlers/saveinput.js"></script>
-    <script src="./handlers/reset.js"></script>
+    <script src="handelers\removeinput.js"></script>
+    <script src="handelers\saveinput.js"></script>
+    <script src="listeners\rest.js"></script>
   </head>
 
   <body onload='document.mainForm.txtInput.focus()'>
     <form name="mainForm" action="#"></form>
-  
-    <section id="user-interface" class="centered">
+    <div id="red">
+    <section id="user-interface" class="first">
       <br />
       <input id="txtInput" type="text" required />
       <br />
@@ -36,11 +36,10 @@
       <hr />
       <button id="btnReset">Reset</button>
     </section>
-  
-
-    <script src="./listeners/removeinput.js"></script>
-    <script src="./listeners/saveinput.js"></script>
-    <script src="./listeners/reset.js"></script>
+</div>
+    <script src="listeners\removeinput.js"></script>
+    <script src="listeners\rest.js"></script>
+    <script src="listeners\saveinput.js"></script>
   </form>
   </body>
 </html>
